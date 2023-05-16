@@ -11,7 +11,6 @@ urlpatterns = [
     path('notification/', views.notification, name='notification'),
     path('one-to-one-meetup/', views.one_to_one_meetup, name='one_to_one_meetup'),
     path('polling/', views.polling, name='polling'),
-    path('privacy-policy/', views.privacy_policy, name='privacy_policy'),
     path('register/', views.register, name='register'),
     # Add a custom handler for the 404 error
     path('404-error/', views.error_404, name='error_404'),

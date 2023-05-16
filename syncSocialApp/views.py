@@ -28,9 +28,6 @@ def one_to_one_meetup(request):
 def polling(request):
     return render(request, 'polling.html')
 
-def privacy_policy(request):
-    return render(request, 'privacy-policy.html')
-
 def register(request):
     return render(request, 'register.html')
 
