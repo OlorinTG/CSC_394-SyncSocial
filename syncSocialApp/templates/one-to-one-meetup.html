@@ -47,7 +47,7 @@
 
                         <!-- Header Logo Start -->
                         <div class="header-logo">
-                            <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+                            <a href="{% url 'home' %}"><img src="assets/images/logo.png" alt="Logo"></a>
                         </div>
                         <!-- Header Logo End -->
 
@@ -55,16 +55,16 @@
                         <div class="header-menu d-none d-lg-flex">
 
                             <ul class="nav-menu">
-                                <li><a class="active" href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a class="active" href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About Us</a></li>
 
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                                <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
                             </ul>
 
 
                             <div class="header-btn">
-                                <a class="btn btn-secondary btn-hover-primary" href="login.html">Get Started</a>
+                                <a class="btn btn-secondary btn-hover-primary" href="{% url 'login' %}">Get Started</a>
                             </div>
 
                             <!-- <div class="header-btn">
@@ -78,7 +78,7 @@
                         <!-- Header Toggle Start -->
                         <div class="header-toggle d-lg-none">
 
-                            <a class="btn btn-secondary btn-hover-primary" href="login.html">Get Started</a>
+                            <a class="btn btn-secondary btn-hover-primary" href="{% url 'login' %}">Get Started</a>
 
                             <!-- <a class="btn btn-secondary btn-hover-primary" href="/dashboard">Dashboard</a> -->
 
@@ -114,11 +114,11 @@
             <!-- Mobile Menu Start -->
             <div class="mobile-menu-items">
                 <ul class="nav-menu">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a class="active" href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
 
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
                 </ul>
 
             </div>
@@ -238,10 +238,10 @@
                                 <h3 class="footer-widget-title">Userful Links</h3>
 
                                 <ul class="widget-link">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+                                    <li><a href="{% url 'about' %}">About Us</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
                                 </ul>
                             </div>
                             <!-- Footer Widget End -->
@@ -251,8 +251,8 @@
                                 <h3 class="footer-widget-title">Help Links</h3>
 
                                 <ul class="widget-link">
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="{% url 'login' %}">Login</a></li>
+                                    <li><a href="{% url 'register' %}"">Register</a></li>
 
                                 </ul>
                             </div>
