@@ -14,4 +14,6 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     # Add a custom handler for the 404 error
     path('404-error/', views.error_404, name='error_404'),
+    path('login/', views.login, name='login'),
+
 ]

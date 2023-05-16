@@ -33,3 +33,5 @@ def register(request):
 
 def error_404(request, exception):
     return render(request, '404-error.html')
+def login(request):
+    return render(request, 'login.html')
