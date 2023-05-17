@@ -1,6 +1,7 @@
 /*----------------------------------------*/
 /*  01. Theme Default CSS
 /*----------------------------------------*/
+@import 'variables';
 
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
