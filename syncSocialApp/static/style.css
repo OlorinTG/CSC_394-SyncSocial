@@ -329,7 +329,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .section-title.section-title-white::before {
-  background-image: url(../images/shape/shape-4.png);
+  background-image: url(../../images/shape/shape-4.png);
 }
 .section-title.section-title-white .sub-title {
   color: #EC2E4D;
@@ -5511,7 +5511,7 @@ select {
 .register-login-form .title span::before {
   position: absolute;
   content: "";
-  background-image: url(../images/shape/shape-4.png);
+  background-image: url(../../images/shape/shape-4.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
