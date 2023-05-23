@@ -35,3 +35,8 @@ def error_404(request, exception):
     return render(request, '404-error.html')
 def login(request):
     return render(request, 'login.html')
+def calendar(request):
+    return render(request, 'calendar.html')
+
+def group(request):
+    return render(request, 'group.html')
