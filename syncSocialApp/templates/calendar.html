@@ -292,7 +292,8 @@
 
         <!-- Admin Tab Menu Start -->
         <div class="nav flex-column nav-pills admin-tab-menu">
-            <a href="dashboard" >Dashboard</a>
+            
+            <a href="{% url 'dashboard' %}">Dashboard</a>
             <a href="group">Create Group</a>
             <a href="group_meetup">Group Meetup</a>
             <a href="one-to-one-meetup">One to One Meetup</a>
@@ -408,7 +409,7 @@
     <!-- Footer Widget Section Start -->
     <div class="footer-widget-section section-padding">
 
-        <img class="shape-01 animation-rotate" src="assets/images/shape/shape-9.png" alt="Shape">
+        <img class="shape-01 animation-rotate" src="{% static 'images/shape/shape-9.png' %}"alt="Shape">
 
         <div class="container">
 
@@ -486,7 +487,7 @@
 
         </div>
 
-        <img class="shape-02 animation-rotate" src="assets/images/shape/shape-9.png" alt="Shape">
+        <img class="shape-02 animation-rotate" src="{% static 'images/shape/shape-9.png' %}" alt="Shape">
 
     </div>
     <!-- Footer Widget Section End -->
@@ -525,18 +526,23 @@
 <!-- JS
 ============================================ -->
 
-<!-- JS Links -->
-<script src="{% static 'assets/js/vendor/modernizr-3.11.2.min.js' %}"></script>
-<script src="{% static 'assets/js/vendor/jquery-3.5.1.min.js' %}"></script>
-<script src="{% static 'assets/js/plugins/popper.min.js' %}"></script>
-<script src="{% static 'assets/js/plugins/bootstrap.min.js' %}"></script>
-<script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
-<script src="{% static 'assets/js/plugins/jquery.magnific-popup.min.js' %}"></script>
-<script src="{% static 'assets/js/plugins/jquery.nice-select.min.js' %}"></script>
-<script src="{% static 'assets/js/plugins/video-playlist.js' %}"></script>
-<script src="{% static 'assets/js/plugins/ajax-contact.js' %}"></script>
-<script src="{% static 'assets/js/main.js' %}"></script>
+<!-- Modernizer & jQuery JS -->
+<script src="{% static 'js/vendor/modernizr-3.11.2.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery-3.5.1.min.js' %}"></script>
 
+<!-- Bootstrap JS -->
+<script src="{% static 'js/plugins/popper.min.js' %}"></script>
+<script src="{% static 'js/plugins/bootstrap.min.js' %}"></script>
+
+<!-- Plugins JS -->
+<script src="{% static 'js/plugins/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'js/plugins/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/plugins/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/plugins/video-playlist.js' %}"></script>
+<script src="{% static 'js/plugins/ajax-contact.js' %}"></script>
+
+<!-- Main JS -->
+<script src="{% static 'main.js' %}"></script>
 
 
 </body>

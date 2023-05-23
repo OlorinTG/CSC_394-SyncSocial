@@ -134,15 +134,18 @@
 
     <div class="page-content-wrapper d-flex">
 
-        <!-- Admin Tab Menu Start -->
+            <!-- Admin Tab Menu Start -->
         <div class="nav flex-column nav-pills admin-tab-menu">
-            <a href="dashboard.html" class="active">Dashboard</a>
-            <a href="group_meetup.html">Group Meetup</a>
-            <a href="one-to-one-meetup.html">One to One Meetup</a>
-            <a href="polling.html">Polling Interface</a>
-            <a href="notification.html">Notifications</a>
-            <a href="meeting-time-location-suggestion.html">Meeting Time Location Suggestion</a>
-            <a href="logout.html">Logout</a>
+
+            <a href="{% url 'dashboard' %}">Dashboard</a>
+            <a href="{% url 'group' %}">Create Group</a>
+            <a href="{% url 'group_meetup' %}">Group Meetup</a>
+            <a href="{% url 'one_to_one_meetup' %}">One to One Meetup</a>
+            <a href="{% url 'polling' %}">Polling Interface</a>
+            <a href="{% url 'notification' %}">Notifications</a>
+            <a class="active" href="{% url 'calendar' %}">calendar</a>
+            <a href="{% url 'meeting_time_location_suggestion' %}">Meeting Time Location Suggestion</a>
+            <a href="{% url 'login' %}">Logout</a> <!-- Note: Replace with correct logout url if it exists -->
         </div>
         <!-- Admin Tab Menu End -->
 
