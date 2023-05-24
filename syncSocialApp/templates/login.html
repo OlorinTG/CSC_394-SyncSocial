@@ -1,6 +1,7 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
 <head>
     <meta name="google-signin-client_id" content="634823975088-2fmq9j0552ih2d2cqo56j0bts6dr5vbf.apps.googleusercontent.com">
     <title>Login</title>
@@ -12,24 +13,21 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
 
-    <!-- CSS
-	============================================ -->
-   
- <!-- Icon Font CSS -->
- <link rel="stylesheet" href="{% static 'css/plugins/icofont.min.css' %}">
- <link rel="stylesheet" href="{% static 'css/plugins/flaticon.css' %}">
- <link rel="stylesheet" href="{% static 'css/plugins/font-awesome.min.css' %}">
+    <!-- CSS -->
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="{% static 'css/plugins/icofont.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/font-awesome.min.css' %}">
 
- <!-- Plugins CSS -->
- <link rel="stylesheet" href="{% static 'css/plugins/bootstrap.min.css' %}">
- <link rel="stylesheet" href="{% static 'css/plugins/animate.min.css' %}">
- <link rel="stylesheet" href="{% static 'css/plugins/swiper-bundle.min.css' %}">
- <link rel="stylesheet" href="{% static 'css/plugins/magnific-popup.css' %}">
- <link rel="stylesheet" href="{% static 'css/plugins/nice-select.css' %}">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="{% static 'css/plugins/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/nice-select.css' %}">
 
- <!-- Main Style CSS -->
- <link rel="stylesheet" href="{% static 'style.css' %}">
-
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 
 </head>
 
@@ -39,52 +37,31 @@
 
         <!-- Header Section Start -->
         <div class="header section">
-
             <!-- Header Main Start -->
             <div class="header-main">
                 <div class="container">
-
                     <!-- Header Wrapper Start -->
                     <div class="header-wrapper">
-
                         <!-- Header Logo Start -->
                         <div class="header-logo">
                             <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="Logo"></a>
                         </div>
                         <!-- Header Logo End -->
-
                         <!-- Header Menu Start -->
                         <div class="header-menu d-none d-lg-flex">
-
                             <ul class="nav-menu">
                                 <li><a class="active" href="{% url 'home' %}">Home</a></li>
                                 <li><a href="{% url 'about' %}">About Us</a></li>
-
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
-                                
                             </ul>
-
-
                             <div class="header-btn">
                                 <a class="btn btn-secondary btn-hover-primary" href="{% url 'login' %}">Get Started</a>
                             </div>
-
-                            <!-- <div class="header-btn">
-                                    <a class="btn btn-secondary btn-hover-primary" href="/dashboard">Dashboard</a>
-                                </div> -->
-
-
                         </div>
                         <!-- Header Menu End -->
-
                         <!-- Header Toggle Start -->
                         <div class="header-toggle d-lg-none">
-
                             <a class="btn btn-secondary btn-hover-primary" href="{% url 'login' %}">Get Started</a>
-
-                            <!-- <a class="btn btn-secondary btn-hover-primary" href="/dashboard">Dashboard</a> -->
-
-
                             <a href="#" class="menu-toggle">
                                 <span></span>
                                 <span></span>
@@ -92,226 +69,204 @@
                             </a>
                         </div>
                         <!-- Header Toggle End -->
-
                     </div>
                     <!-- Header Wrapper End -->
-
                 </div>
             </div>
             <!-- Header Main End -->
-
         </div>
         <!-- Header Section End -->
-
-
         <!-- Mobile Menu Start -->
         <div class="mobile-menu">
-
             <!-- Menu Close Start -->
             <a class="menu-close" href="javascript:void(0)">
                 <i class="icofont-close-line"></i>
             </a>
             <!-- Menu Close End -->
-
             <!-- Mobile Menu Start -->
             <div class="mobile-menu-items">
                 <ul class="nav-menu">
                     <li><a class="active" href="{% url 'home' %}">Home</a></li>
                     <li><a href="{% url 'about' %}">About Us</a></li>
-
                     <li><a href="{% url 'contact' %}">Contact</a></li>
-                    
                 </ul>
-
             </div>
             <!-- Mobile Menu End -->
-
         </div>
         <!-- Mobile Menu End -->
-
         <!-- Overlay Start -->
         <div class="overlay"></div>
- <!-- Page banner Section Start -->
- <div class="section page-banner-section" style="background-image: url({% static 'images/page-banner.jpg' %})">
-    <div class="container">
-
         <!-- Page banner Section Start -->
-        <div class="page-banner-content">
-            <h2 class="page-title">Login Form</h2>
-
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-                <li class="breadcrumb-item active">Login</li>
-            </ul>
+        <div class="section page-banner-section" style="background-image: url({% static 'images/page-banner.jpg' %})">
+            <div class="container">
+                <!-- Page banner Section Start -->
+                <div class="page-banner-content">
+                    <h2 class="page-title">Login Form</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="breadcrumb-item active">Login</li>
+                    </ul>
+                </div>
+                <!-- Page banner Section End -->
+            </div>
         </div>
         <!-- Page banner Section End -->
-
-    </div>
-</div>
-<!-- Page banner Section End -->
-
-<!-- Login & Register Section Start -->
-<div class="section section-padding">
-    <div class="container">
-        <h2> Login With Google Account</h2>
-        <!-- Google Sign-In Start -->
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-
-        <!-- Google Sign-In End -->
-
-    </div>
-</div>
-<!-- Register & Login Wrapper End -->
-
-
-
-</div>
-<!-- Login & Register Section End -->
- <!-- Footer Start -->
- <div class="section footer-section">
-
-    <!-- Footer Widget Section Start -->
-    <div class="footer-widget-section section-padding">
-
-        <img class="shape-01 animation-rotate" src="{% static 'images/shape/shape-9.png' %}" alt="Shape">
-
-        <div class="container">
-
-            <!-- Footer Widget Wrapper Start -->
-            <div class="footer-widget-wrapper">
-                <div class="row">
-                    <div class="col-lg-4">
-
-                        <!-- Footer Widget Start -->
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Subscribe Newsletter</h3>
-
-                            <div class="widget-newsletter">
-                                <p>put text here put text here put text here put text here put text here</p>
-
-                                <div class="newsletter-form">
-                                    <form action="#">
-                                        <input type="text" placeholder="Enter email">
-                                        <button class="btn btn-primary btn-hover-white">Subscribe Now</button>
-                                    </form>
-                                </div>
+        <!-- Login & Register Section Start -->
+        <div class="section section-padding">
+            <div class="container">
+                <!-- Login & Register Wrapper Start -->
+                <div class="login-register-wrapper">
+                    <div class="login-form">
+                        <h2>Create an account:</h2>
+                        
+                        <form id="register-form" action="{% url 'register_user' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
-                        </div>
-                        <!-- Footer Widget End -->
-
+                            <div class="form-group">
+                                <label for="password1">Password:</label>
+                                <input type="password" id="password1" name="password1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">Confirm Password:</label>
+                                <input type="password" id="password2" name="password2" required>
+                            </div>
+                            <button type="submit">Register</button>
+                        </form>
+                        
+                        
                     </div>
-                    <div class="col-lg-8">
-
-                        <!-- Footer Widget Start -->
-                        <div class="widget-wrapper">
-
-                            <!-- Footer Widget Start -->
-                            <div class="footer-widget">
-                                <h3 class="footer-widget-title">Userful Links</h3>
-
-                                <ul class="widget-link">
-                                    <li><a href="{% url 'home' %}">Home</a></li>
-                                    
-                                    <li><a href="{% url 'about' %}">About Us</a></li>
-                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                                </ul>
+                    <div class="login-form">
+                        <h2>Already have an account? Login:</h2>
+                        <form action="{% url 'login_user' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="login-email">Email:</label>
+                                <input type="email" id="login-email" name="login-email" required>
                             </div>
-                            <!-- Footer Widget End -->
-
-                            <!-- Footer Widget Start -->
-                            <div class="footer-widget">
-                                <h3 class="footer-widget-title">Help Links</h3>
-
-                                <ul class="widget-link">
-                                    <li><a href="{% url 'login' %}">Login</a></li>
-                                    <li><a href="{% url 'register' %}"">Register</a></li>
-
-                                </ul>
+                            <div class="form-group">
+                                <label for="login-password">Password:</label>
+                                <input type="password" id="login-password" name="login-password" required>
                             </div>
-                            <!-- Footer Widget End -->
-
-                            <!-- Footer Widget Start -->
-                            <div class="footer-widget">
-                                <h3 class="footer-widget-title">Contact Info</h3>
-
-                                <div class="widget-location">
-                                    <h3 class="footer-widget-title">Email</h3>
-
-                                    <p>info@syncsocial.com</p>
-                                </div>
-                                
-                            </div>
-                            <!-- Footer Widget End -->
-
-                        </div>
-                        <!-- Footer Widget End -->
-
+                            <button type="submit">Login</button>
+                        </form>
+                        
                     </div>
                 </div>
+                <!-- Login & Register Wrapper End -->
             </div>
-            <!-- Footer Widget Wrapper End -->
-
         </div>
-
-        <img class="shape-02 animation-rotate" src="{% static 'images/shape/shape-9.png' %}" alt="Shape">
-
-    </div>
-    <!-- Footer Widget Section End -->
-
-    <!-- Footer Copyright Section Start -->
-    <div class="footer-copyright">
-        <div class="container">
-
-            <!-- Copyright Wrapper Start -->
-            <div class="copyright-wrapper justify-content-center">
-
-                <div class="copyright-text text-center">
-                    <p>&copy; 2023 <span> Sync Social </span>. All Right Reserved.</p>
+        <!-- Register & Login Wrapper End -->
+        <!-- Footer Start -->
+        <div class="section footer-section">
+            <!-- Footer Widget Section Start -->
+            <div class="footer-widget-section section-padding">
+                <img class="shape-01 animation-rotate" src="{% static 'images/shape/shape-9.png' %}" alt="Shape">
+                <div class="container">
+                    <!-- Footer Widget Wrapper Start -->
+                    <div class="footer-widget-wrapper">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!-- Footer Widget Start -->
+                                <div class="footer-widget">
+                                    <h3 class="footer-widget-title">Subscribe Newsletter</h3>
+                                    <div class="widget-newsletter">
+                                        <p>put text here put text here put text here put text here put text here</p>
+                                        <div class="newsletter-form">
+                                            <form action="#">
+                                                <input type="text" placeholder="Enter email">
+                                                <button class="btn btn-primary btn-hover-white">Subscribe Now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Footer Widget End -->
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- Footer Widget Start -->
+                                <div class="widget-wrapper">
+                                    <!-- Footer Widget Start -->
+                                    <div class="footer-widget">
+                                        <h3 class="footer-widget-title">Userful Links</h3>
+                                        <ul class="widget-link">
+                                            <li><a href="{% url 'home' %}">Home</a></li>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Footer Widget End -->
+                                    <!-- Footer Widget Start -->
+                                    <div class="footer-widget">
+                                        <h3 class="footer-widget-title">Help Links</h3>
+                                        <ul class="widget-link">
+                                            <li><a href="{% url 'login' %}">Login</a></li>
+                                            <li><a href="{% url 'register' %}">Register</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Footer Widget End -->
+                                    <!-- Footer Widget Start -->
+                                    <div class="footer-widget">
+                                        <h3 class="footer-widget-title">Contact Info</h3>
+                                        <div class="widget-location">
+                                            <h3 class="footer-widget-title">Email</h3>
+                                            <p>info@syncsocial.com</p>
+                                        </div>
+                                    </div>
+                                    <!-- Footer Widget End -->
+                                </div>
+                                <!-- Footer Widget End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Wrapper End -->
                 </div>
-
-
-
+                <img class="shape-02 animation-rotate" src="{% static 'images/shape/shape-9.png' %}" alt="Shape">
             </div>
-            <!-- Copyright Wrapper End -->
-
+            <!-- Footer Widget Section End -->
+            <!-- Footer Copyright Section Start -->
+            <div class="footer-copyright">
+                <div class="container">
+                    <!-- Copyright Wrapper Start -->
+                    <div class="copyright-wrapper justify-content-center">
+                        <div class="copyright-text text-center">
+                            <p>&copy; 2023 <span> Sync Social </span>. All Right Reserved.</p>
+                        </div>
+                    </div>
+                    <!-- Copyright Wrapper End -->
+                </div>
+            </div>
+            <!-- Footer Copyright Section End -->
         </div>
+        <!-- Footer End -->
+        <!--Back To Start-->
+        <a href="#" class="back-to-top">
+            <i class="icofont-simple-up"></i>
+        </a>
+        <!--Back To End-->
     </div>
-    <!-- Footer Copyright Section End -->
+    <!-- JS -->
+    <!-- Modernizer & jQuery JS -->
+    <script src="{% static 'js/vendor/modernizr-3.11.2.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-3.5.1.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/plugins/popper.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap.min.js' %}"></script>
+    <!-- Plugins JS -->
+    <script src="{% static 'js/plugins/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/plugins/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/plugins/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/plugins/video-playlist.js' %}"></script>
+    <script src="{% static 'js/plugins/ajax-contact.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'main.js' %}"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+       function register() {
+    document.getElementById("register-form").submit();
+}
 
-</div>
-<!-- Footer End -->
-
-<!--Back To Start-->
-<a href="#" class="back-to-top">
-    <i class="icofont-simple-up"></i>
-</a>
-<!--Back To End-->
-
-</div>
-
-<!-- JS
-============================================ -->
-
-<!-- Modernizer & jQuery JS -->
-<script src={% static 'js/vendor/modernizr-3.11.2.min.js' %}></script>
-<script src={% static 'js/vendor/jquery-3.5.1.min.js' %}></script>
-
-<!-- Bootstrap JS -->
-<script src={% static 'js/plugins/popper.min.js' %}></script>
-<script src={% static 'js/plugins/bootstrap.min.js' %}></script>
-
-<!-- Plugins JS -->
-<script src={% static 'js/plugins/swiper-bundle.min.js' %}></script>
-<script src={% static 'js/plugins/jquery.magnific-popup.min.js' %}></script>
-<script src="{% static 'js/plugins/jquery.nice-select.min.js' %}"></script>
-<script src={% static 'js/plugins/video-playlist.js' %}></script>
-<script src={% static 'js/plugins/ajax-contact.js' %}></script>
-
-
-<!-- Main JS -->
-<script src={% static 'main.js' %}></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+    </script>
 </body>
-
 </html>
-

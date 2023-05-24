@@ -31,14 +31,15 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+        'syncSocialApp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'syncSocialApp',
 ]
+AUTH_USER_MODEL = 'syncSocialApp.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,13 +78,14 @@ WSGI_APPLICATION = 'syncsocial.syncsocial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'syncSocialDB',  # Update this line
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
